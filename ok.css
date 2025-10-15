@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  a[href="#main"] {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+  }
+  
+  a[href="#main"]:focus {
+    top: 10px;
+  }
+  
+  nav {
+    display: inline-block;
+    width: 80%;
+    background: #333;
+    padding: 10px;
+  }
+  
+  nav img {
+    width: 10%;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cột bằng nhau */
+    gap: 20px; /* khoảng cách đều giữa các ảnh */
+    width: 90%;
+    margin: 20px auto;
+  }
+  
+  .grid img {
+    width: 100%;
+    height: 300px;          /* cùng chiều cao cho đẹp */
+    object-fit: cover;      /* cắt ảnh cho vừa khung, không méo */
+    border-radius: 10px;
+  }
+  
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+  }
